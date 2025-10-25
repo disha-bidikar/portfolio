@@ -19,7 +19,7 @@ It aims to provide a clean and professional online presence.
 
 ---
 
-###Here’s a preview of my portfolio website:
+### Here’s a preview of my portfolio website:
 
 <p align="center">
   <img width="1710" height="1071" alt="Screenshot 2025-10-25 at 3 13 32 PM" src="https://github.com/user-attachments/assets/1e3cebc1-944e-4625-b4dc-138314935d6a" />
