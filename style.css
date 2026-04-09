@@ -47,48 +47,56 @@
   /* Import Font Awesome for icons */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
 
-.hero {
+
+  .hero {
   display: flex;
   flex-wrap: wrap;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
-  background-color: #f5faff;
+  background: linear-gradient(to right, #f4f8ff, #efe3ff);
 }
 
 .hero-left,
 .hero-right {
   width: 50%;
-  height: 100%;
+  min-height: 100vh;
+}
+
+.hero-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .hero-left img {
-  width: 100%;
+  width: 110%;
   height: 100%;
   object-fit: cover;
+  animation: float 6s ease-in-out infinite;
 }
 
 .hero-right {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 3rem;
+  padding: 4rem 5rem;
   animation: fadeIn 1.5s ease-in-out;
 }
 
 .hero-right h1 {
-  font-size: 3.5rem;
-  margin-bottom: 1rem;
-  color: #03045e;
-  animation: fadeInDown 1s ease-in-out;
+  font-size: 4.5rem;
+  line-height: 1.1;
+  margin-bottom: 1.2rem;
+  color: #1d4ed8;
 }
 
 .hero-right p {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin-bottom: 2rem;
-  color: #0077b6;
-  animation: slideUp 1.2s ease-in-out;
+  color: #4b5563;
+  max-width: 550px;
 }
-
 .hero-buttons {
   display: flex;
   gap: 15px;
@@ -291,11 +299,14 @@
   border-radius: 20px;
   font-weight: 500;
   color: #1a1a1a;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  animation: fadeUp 0.8s ease forwards;
 }
 
 .skills-grid span:hover {
   background-color: #cce0ff;
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 18px rgba(0, 119, 255, 0.15);
 }
 
 /* Projects Section */
